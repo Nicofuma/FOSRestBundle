@@ -30,7 +30,7 @@ interface ParamFetcherInterface
      * Gets a validated parameter.
      *
      * @param string $name   Name of the parameter
-     * @param bool   $strict Whether a requirement mismatch should cause an exception
+     * @param bool|null   $strict Whether a requirement mismatch should cause an exception (null to let each param decide)
      *
      * @return mixed Value of the parameter
      */
@@ -39,7 +39,7 @@ interface ParamFetcherInterface
     /**
      * Gets all validated parameter.
      *
-     * @param bool $strict Whether a requirement mismatch should cause an exception
+     * @param bool|null $strict Whether a requirement mismatch should cause an exception (null to let each param decide)
      *
      * @return array Values of all the parameters
      */
